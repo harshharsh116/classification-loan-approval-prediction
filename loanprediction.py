@@ -19,7 +19,7 @@ import io
 @st.cache_data
 
 def load_data():
-    df=pd.read_csv("C:/Users/Harsh/PyCharmMiscProject/loan prediction/Loan_approval_data_2025.csv")
+    df=pd.read_csv("Loan_approval_data_2025.csv")
     return df
 df = load_data()
 st.header("First Tick prediction and enter data then tick model build for building and choosing model",text_alignment='justify')
@@ -319,5 +319,6 @@ if c2:
             st.success("congratulation, loan approved")
         elif Y_pre[0]==0:
             st.write("sorry, loan rejected")
+
 
 
